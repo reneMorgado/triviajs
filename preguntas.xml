@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Cuestionario>
+    <Preguntas>
+        <pregunta1>1.- ¿Qué significa XML?</pregunta1>
+        <pregunta2>2.- ¿Qué significa HTML?</pregunta2>
+        <pregunta3>3.- ¿Qué significa CSS?</pregunta3>
+        <pregunta4>4.- ¿Qué significa DOM</pregunta4>
+        <pregunta5>5.-¿Qué significa JS?</pregunta5>
+    </Preguntas>
+    <Imagenes>
+        <img1>./src/img/1.png</img1>
+        <img2>./src/img/2.png</img2>
+        <img3>./src/img/3.png</img3>
+        <img4>./src/img/4.gif</img4>
+        <img5>./src/img/5.jpeg</img5>
+    </Imagenes>
+    <Respuestas>
+        <respuesta1_1>eXtensible Markup Language</respuesta1_1>
+        <respuesta1_2>Xtreme Markup Language</respuesta1_2>
+        <respuesta1_3>Xtensive Markup Language</respuesta1_3>
+        <respuesta1_4>eXternal Markup Language</respuesta1_4>
+        <respuesta2_1>Hipertext Markup Language</respuesta2_1>
+        <respuesta2_2>Hipertext Technical Markup Language</respuesta2_2>
+        <respuesta2_3>Hiperspace Text Markup Language</respuesta2_3>
+        <respuesta2_4>Hiper Technical Markup Language</respuesta2_4>
+        <respuesta3_1>Cascading Style Sheets</respuesta3_1>
+        <respuesta3_2>Cascading Style Soap</respuesta3_2>
+        <respuesta3_3>Casting Style Sheets</respuesta3_3>
+        <respuesta3_4>Cascading Startup Sheets</respuesta3_4>
+        <respuesta4_1>Document Object Model</respuesta4_1>
+        <respuesta4_2>Documented Oriented Model</respuesta4_2>
+        <respuesta4_3>Direct Object Markup</respuesta4_3>
+        <respuesta4_4>Directory Of Model</respuesta4_4>
+        <respuesta5_1>JavaScript</respuesta5_1>
+        <respuesta5_2>JeSuis</respuesta5_2>
+        <respuesta5_3>JetScript</respuesta5_3>
+        <respuesta5_4>JabaliSoup</respuesta5_4> 
+    </Respuestas>
+</Cuestionario>

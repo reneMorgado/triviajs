@@ -1,0 +1,232 @@
+/* IMPORTANDO FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* VARIABLES DE COLORES */
+*{
+    --color-background: #142850;
+    --color-border: #120136;
+    --color-game: #27496d;
+}
+
+/* ESTILOS GENERALES */
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--color-background);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    color: rgba(255, 255, 255, .8);
+}
+
+/* ESTILOS DE LA PAGINA DE INICIO*/
+.inicio{
+    background-color: var(--color-game);
+    grid-area: 2 / 4 / 12 / 10;
+    border: 2px solid var(--color-border);
+    border-radius: 25px;
+}
+.titulo{
+    grid-area: 3 / 5 / 5 / 9;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desc{
+    grid-area: 5 / 4 / 6 / 10;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.autor{
+    grid-area: 6 / 4 / 7 / 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen{
+    grid-area: 7 / 5 / 10 / 9 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: var(--color-background);
+    border-radius: 50px;
+    outline: none;
+    width: 100%;
+    height: 6vh;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    color: rgba(255, 255, 255, .8);
+}
+button:hover{
+    opacity: .8;
+}
+.siguiente{
+    grid-area: 10 / 5 / 11 / 9;
+    border-radius: 25px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    width: 100%;
+}
+
+/* ESTILOS DEL JUEGO */
+.contadorBuenas{
+    grid-area: 2 / 4 / 3 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contadorMalas{
+    grid-area: 2 / 8 / 3 / 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorTiempo{
+    grid-area: 2 / 6 / 3 / 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pregunta{
+    grid-area: 3 / 5 / 11 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.imagenPregunta{
+    width: 30%;
+    align-self: center;
+}
+
+/* ESTILOS DE LA PAGINA FINAL*/
+.finalTitulo{
+    grid-area: 3 / 5 / 5 / 9;
+    text-align: center;
+}
+.tiempoFinal{
+    grid-area: 5 / 5 / 6 / 9;
+    text-align: center;
+}
+.aciertosFinal{
+    grid-area: 6 / 5 / 7 / 9;
+    text-align: center;
+}
+.erroresFinal{
+    grid-area: 7 / 5 / 8 / 9;
+    text-align: center;
+}
+
+/* MEDIA QUERIES PARA VISTA EN MÓVILES (RESPONSIVE DESIGN) */
+@media screen and (max-width: 768px){
+    .inicio{
+        background-color: var(--color-game);
+        grid-area: 2 / 2 / 12 / 12;
+        border: 2px solid var(--color-border);
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 620px){
+    .titulo{
+        grid-area: 3 / 3 / 5 / 11;
+        font-size: 8vw;
+    }
+    .desc{
+        grid-area: 5 / 3 / 6 / 11;
+        font-size: 4vw;
+    }
+    .autor{
+        grid-area: 6 / 3 / 7 / 11;
+        font-size: 5vw;
+    }
+    .siguiente{
+        grid-area: 10 / 3 / 11 / 11;
+    }
+    .contadorBuenas{
+        grid-area: 2 / 3/ 3 / 5;
+    }
+    .contadorMalas{
+        grid-area: 2 / 9 / 3 / 11;
+    }
+    .contenedorTiempo{
+        grid-area: 2 / 5 / 3 / 9;
+    }
+    .pregunta{
+        grid-area: 3 / 3 / 11 / 11;
+        font-size: 4vw;
+    }
+    .imagenPregunta{
+        width: 40%;
+    }
+    button{
+        font-size: 3vw;
+    }
+    .finalTitulo{
+        grid-area: 3 / 3 / 5 / 11;
+        font-size: 10vw;
+    }
+    .tiempoFinal{
+        grid-area: 5 / 3 / 6 / 11;
+        font-size: 6vw;
+    }
+    .aciertosFinal{
+        grid-area: 6 / 3 / 7 / 11;
+        font-size: 6vw;
+    }
+    .erroresFinal{
+        grid-area: 7 / 3 / 8 / 11;
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width: 425px){
+    .inicio{
+        grid-area: 2 / 2 / 13 / 12;
+    }
+    .contadorBuenas{
+        grid-area: 2 / 4 / 3 / 7;
+    }
+    .contadorMalas{
+        grid-area: 2 / 7 / 3 / 10;
+    }
+    .contenedorTiempo{
+        grid-area: 3 / 5 / 4 / 9;
+    }
+    .titulo{
+        grid-area: 4 / 2 / 5 / 12;
+    }
+    .desc{
+        grid-area: 5 / 2 / 6 / 12;
+        font-size: 5vw;
+    }
+    .autor{
+        grid-area: 6 / 4 / 7 / 10;
+    }
+    .pregunta{
+        grid-area: 4 / 3 / 12 / 11;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 425px){
+    .contadorBuenas{
+        grid-area: 2 / 3 / 3 / 7;
+    }
+    .contadorMalas{
+        grid-area: 2 / 7 / 3 / 11;
+    }
+    .contenedorTiempo{
+        grid-area: 3 / 3 / 4 / 11;
+    }
+}
+
+

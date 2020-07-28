@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Trivia XML</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inicio"></div>
+
+        <!-- PANTALLA DE INICIO -->
+        <button class="siguiente" onclick="empezarJuego()">Iniciar</button>
+        <div class="imagen"><img src="src/img/trivia.png" alt=""></div>
+        <p class="titulo">TRIVIA XML</p>
+        <p class="desc">Selecciona la opción correcta</p>
+        <p class="autor"><strong>Autor </strong>: René M</p>
+
+        <!-- PANTALLA DEL JUEG0 -->
+        <div class="pregunta"></div>
+        <div class="contadorBuenas"><p>Correctas: <span class="buenas">0</span></p></div>
+        <div class="contadorMalas"><p>Malas: <span class="malas">0</span></p></div> 
+        <div class="contenedorTiempo"><p>Tiempo: <span class="tiempo">100</span> seg</p></div>
+
+        <!-- PANTALLA FINAL -->
+        <div class="final"></div>
+
+    </div>
+</body>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="src/js/conexion.js"></script>
+<script src="src/js/trivia.js"></script>
+
+</html>
